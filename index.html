@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Selector</title>
+    <style>
+        body {
+            height: 100%;
+            background-image: url(./glowing-triangle-neon-pq-1920x1080.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 85%;
+            width: 85%;
+            border-image: url(./blue-pattern-3d-ko.jpg);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section {
+            height: 500px;
+            width: 50%;
+            border: 2px solid white ;
+            margin: 10px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(6, 210px);
+            grid-template-rows: repeat(2, 210px);
+            height: 500px;
+            width: 100%;
+            row-gap: 35px;
+        }
+
+        .red {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .orangered {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .orange {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .yellow {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .gold {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .lawngreen {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .green {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .cyan {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .blue {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .indigo {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .violet {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .purple {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .brown {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .silver {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+
+
+        button {
+            margin: 5px;
+        }
+
+        .gre {
+            background-color: gray;
+        }
+
+        h1 {
+            margin: 0;
+            color: white;
+        }
+
+        p {
+            color: white;
+            font-weight: bolder;
+        }
+
+
+
+        @media (max-width: 680px) {
+            body {
+                height: 100%;
+                width: 100%;
+            };
+
+            .main {width: 100%;
+                height: 100%;
+            }
+
+            .section {
+                width: 550px;
+                height: 500px;
+                padding: 10px;
+                
+            }
+
+            .grid {
+                grid-template-columns: repeat(4, auto);
+                grid-template-rows: repeat(3, auto);
+                column-gap: 5px;
+                row-gap: 10px;
+                height: 100%;
+            }
+
+           .size {
+            height: 100px;
+            width: 100px;
+            text-align: left;
+           }
+
+           .red {
+            height: 80px;
+            width: 80px;
+           }
+
+           .orangered {
+            height: 80px;
+            width: 80px;
+           }
+
+           .orange {
+            height: 80px;
+            width: 80px;
+           }
+           
+           .yellow {
+            height: 80px;
+            width: 80px;
+           }
+
+           .gold {
+            height: 80px;
+            width: 80px;
+           }
+
+           .lawngreen {
+            height: 80px;
+            width: 80px;
+           }
+
+           .green {
+            height: 80px;
+            width: 80px;
+           }
+
+           .cyan {
+            height: 80px;
+            width: 80px;
+           }
+
+           .blue {
+            height: 80px;
+            width: 80px;
+           }
+
+           .purple {
+            height: 80px;
+            width: 80px;
+           }
+
+           .brown {
+            height: 80px;
+            width: 80px;
+           }
+
+           .silver {
+            height: 80px;
+            width: 80px;
+           }
+
+           p {
+            font-size: 8px;
+            background-color: blue;
+            width: 80%;
+           }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Character Selector</h1>
+       <div class="section ">
+       </div>
+       <div class="section grid grey">
+        <div class="size">
+            <p>Sarah Breaker</p>
+         <img src="./Videogame_character_30693863.png" onclick="colorRed()" class="red">
+        </div>
+        <div class="size">
+            <p>Amy Breaker</p>
+         <img src="./videogame_character_2035694788.png" onclick="colorOrangeRed()" class="orangered">
+        </div>
+        <div class="size">
+            <p>Jenny Adams</p>
+         <img src="./blonde_videogame_character_1191976639.png" onclick="colorOrange()" class="orange">
+        </div>
+        <div class="size">
+            <p>Sam and Gina Weston</p>
+         <img src="./blonde_videogame_character_male__3334428067.png" onclick="colorYellow()" class="yellow">
+        </div>
+        <div class="size">
+            <p>Angela Preston</p>
+         <img src="./brunette_videogame_character_3531514901.png" onclick="colorGold()" class="gold">
+        </div>
+        <div class="size">
+            <p>Mary Preston</p>
+         <img src="./brunette_videogame_character_355997213.png" onclick="colorLawnGreen()" class="lawngreen">
+        </div>
+        <div class="size">
+            <p>Drake Powers</p>
+         <img src="./videogame_character_1323766449.png" onclick="colorGreen()" class="green">
+        </div>
+        <div class="size">
+            <p>Regina Kyle</p>
+         <img src="./man_brunette_videogame_character_680515929.png" onclick="colorCyan()" class="cyan">
+        </div>
+         <div class="size">
+            <p>Hannah Rae</p>
+         <img src="./blonde_videogame_character_3369618843.png" onclick="colorBlue()" class="blue">
+        </div>
+        <div class="size">
+            <p>Jason Murdock</p>
+         <img src="./videogame_character_3118130056.png" onclick="colorPurple()" class="purple">
+        </div>
+        <div class="size">
+            <p>Tyler Stanton</p>
+         <img src="./videogame_character_3803698979.png" onclick="colorBrown()" class="brown">
+        </div>
+        <div class="size">
+            <p>Jessica Marks</p>
+         <img src="./videogame_character_435605423.png" onclick="colorSilver()" class="silver">
+        </div>
+       </div>
+        </ul>
+    </div>
+    </div>
+    <script>
+        function colorRed() {
+            document.querySelector(".section").style.backgroundImage = "url('Videogame_character_30693863.png')";
+        }
+
+        function colorOrangeRed() {
+            document.querySelector(".section").style.backgroundImage = "url('videogame_character_2035694788.png')";
+        }
+
+        function colorOrange() {
+            document.querySelector(".section").style.backgroundImage = "url('blonde_videogame_character_1191976639.png')";
+        }
+
+        function colorYellow() {
+            document.querySelector(".section").style.backgroundImage = "url('blonde_videogame_character_male__3334428067.png')";
+        }
+
+        function colorGold() {
+            document.querySelector(".section").style.backgroundImage = "url('brunette_videogame_character_3531514901.png')";
+        }
+
+        function colorLawnGreen() {
+            document.querySelector(".section").style.backgroundImage = "url('brunette_videogame_character_355997213.png')";
+        }
+
+        function colorGreen() {
+            document.querySelector(".section").style.backgroundImage = "url('videogame_character_1323766449.png')";
+        }
+
+        function colorCyan() {
+            document.querySelector(".section").style.backgroundImage = "url('man_brunette_videogame_character_680515929.png')";
+        }
+
+        function colorBlue() {
+            document.querySelector(".section").style.backgroundImage = "url('blonde_videogame_character_3369618843.png')";
+        }
+
+        function colorIndigo() {
+            document.querySelector(".section").style.backgroundImage = "url('videogame_character_2106436224.png')";
+        }
+
+        function colorViolet() {
+            document.querySelector(".section").style.backgroundImage = "url('videogame_character_2970938145.png')";
+        }
+
+        function colorPurple() {
+            document.querySelector(".section").style.backgroundImage = "url('videogame_character_3118130056.png')";
+        }
+
+        function colorBrown() {
+            document.querySelector(".section").style.backgroundImage = "url('videogame_character_3803698979.png')";
+        }
+
+        function colorSilver() {
+            document.querySelector(".section").style.backgroundImage = "url('videogame_character_435605423.png')";
+        }
+
+    </script>
+</body>
+</html>
